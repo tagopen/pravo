@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" prefix="og: http://ogp.me/ns#">
   <head>
-    <title>Главная страница</title>  
+    <title>Ваше право</title>  
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
     <!-- Meta SEO - Description, Keywords, Title -->
@@ -46,6 +46,10 @@
     <meta name="twitter:description" content="My Site is cool" />
     <meta name="twitter:image" content="img/logo/microformat.png" />
 
+    <!-- Open Sans + PT Sans Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=cyrillic" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet"> 
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
@@ -63,6 +67,60 @@
     <![endif]-->
   </head>
   <body>
+    <!--     HEADER   BEGIN    -->
+    <header class="header">
+      <nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-6 navbar-header">
+              <a href="" class="navbar-brand navbar__logo">
+                <img src="img/logo/logo320.png" alt="" class="visible-xs logo__img">
+                <img src="img/logo/logo.png" alt="" class="hidden-xs logo__img">
+              </a>
+              <p class="hidden-xs navbar__title">Юридическая помощь<br> по всей Украине</p>
+            </div>
+            <div class="col-xs-6 navbar__right">
+              <div class="phone">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <div class="phone__box">
+                  <a class="phone__link" href="tel:388000001234">
+                    <span class="phone__link--number">+38(800) 000 12 34</span>
+                  </a>
+                  <a class="phone__link" href="tel:388000001234">
+                    <span class="phone__link--number">+38(800) 000 12 34</span>
+                  </a>
+                </div>
+              </div>
+              <button class="btn__call navbar__call" data-toggle="modal" data-target="#myModal1">Заказать звонок</button>
+            </div> 
+          </div>
+        </div>
+      </nav>
+      <div class="content">
+        <div class="container">
+          <div class="row">
+            <div class="hidden-xs col-sm-5">
+              <div class="content__img">
+                <img src="img/content.png" alt="" class="img-responsive">
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-7">
+              <div class="content__box">
+                <h1 class="content__heading">Оказываем помощь <span class="content__heading--text">в регистрации и ликвидации</span> предприятий, решаем<span class="content__heading--text"> налоговые споры</span></h1>
+                <ul class="content__list">
+                  <li class="content__list--item">Регистрируем предприятие за 3 дня</li>
+                  <li class="content__list--item">Регистрируем предприятие за 3 дня</li>
+                  <li class="content__list--item">Более 9 лет опыта в разрешении налоговых споров</li>
+                  <li class="content__list--item">Быстро решаем Ваши проблемы без Вашего участия</li>
+                </ul>
+                <button class="btn__call content__btn" data-toggle="modal" data-target="#myModal2">Получить бесплатную консультацию</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <!-- jQuery -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script> -->
     <script src="js/jquery.js"></script>
@@ -74,14 +132,14 @@
     <script src="js/jquery.reject.js"></script>
 
     <!-- Equial Heights JavaScript -->
-    <script src="js/jQuery.equalHeights.js"></script>
+    <script src="js/jquery.equalheights.js"></script>
 
     <!-- Navbar-fixed-top JavaScript -->
     <script src="js/classie.js"></script>
     <script src="js/cbpAnimatedHeader.min.js"></script>
 
     <!-- Validation Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/jqbootstrapvalidation.js"></script>
     <script src="js/contact_me.js"></script>
     
     <!-- Slick-Slider JavaScript -->

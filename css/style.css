@@ -137,6 +137,28 @@
   background: url('../img/icons-sa8871e608e.png') 0 0 no-repeat;
 }
 
+.form-group {
+  position: relative;
+}
+.form__input {
+  height: auto;
+  font: 400 18px/20px "Open Sans", sans-serif;
+  padding: 12px 0;
+  text-align: center;
+  border: 2px solid #fbd823;
+}
+.form__input:focus {
+  border-color: #1c97d1;
+}
+.form__input::-moz-placeholder {
+  color: #000;
+  text-align: center;
+}
+.form__input::-webkit-input-placeholder {
+  color: #000;
+  text-align: center;
+}
+
 .btn__call {
   color: #000;
   font: 400 14px/20px "PT Sans", sans-serif;
@@ -148,6 +170,9 @@
   -ms-border-radius: 4px;
   border-radius: 4px;
   border: 0;
+}
+.btn__call span {
+  font: 400 18px/20px "Open Sans", sans-serif;
 }
 
 .g_heading {
@@ -200,6 +225,7 @@ a:focus {
 .navbar__call {
   font: 400 12px/12px "PT Sans", sans-serif;
   color: #1c97d1;
+  background-image: none;
   background-color: transparent;
   border: 0;
 }
@@ -263,10 +289,54 @@ a:focus {
   font: 400 18px/20px "PT Sans", sans-serif;
 }
 
+/* ---------------------------------------- */
+/* O F F E R    S E C T I O N    S T Y L E  */
+/* ---------------------------------------- */
+.offer {
+  padding: 55px 0 100px;
+  background: url(../img/offerbg.png) no-repeat center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.offer__heading {
+  padding: 10px 15px;
+  color: #1c97d1;
+  background-color: #fff;
+  margin-bottom: 60px;
+}
+.offer__subheading {
+  font: 400 16px/20px "Open Sans", sans-serif;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.offer__subheading--text {
+  color: #fbd823;
+}
+.offer__info {
+  padding: 5px;
+  font: 600 18px/20px "Open Sans", sans-serif;
+  color: #fff;
+  border: 2px dashed #1c97d1;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.offer__btn {
+  padding: 10px 35px;
+}
+
 @media only screen and (min-width: 768px) {
   /* ---------------------------------------- */
   /* G E N E R A L    S T Y L E               */
   /* ---------------------------------------- */
+  .btn__call {
+    font: 400 18px/20px "PT Sans", sans-serif;
+  }
+
   .g_heading {
     font: 600 36px/40px "Open Sans", sans-serif;
   }
@@ -278,6 +348,7 @@ a:focus {
     font: 400 16px/16px "PT Sans", sans-serif;
     color: #000;
     padding: 10px 45px;
+    background-image: linear-gradient(to top, #ffbb00 0%, #ffe900 100%);
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -306,7 +377,6 @@ a:focus {
   }
   .content__btn {
     padding: 10px 35px;
-    font: 400 18px/20px "PT Sans", sans-serif;
   }
 
   /* ---------------------------------------- */
@@ -324,5 +394,21 @@ a:focus {
   .help__box {
     padding: 45px 30px 25px;
     text-align: center;
+  }
+
+  /* ---------------------------------------- */
+  /* O F F E R    S E C T I O N    S T Y L E  */
+  /* ---------------------------------------- */
+  .offer__heading {
+    margin-bottom: 90px;
+  }
+  .offer__subheading {
+    font: 400 36px/40px "Open Sans", sans-serif;
+  }
+  .offer__info {
+    font: 600 30px/36px "Open Sans", sans-serif;
+  }
+  .offer__btn {
+    padding: 12px 40px;
   }
 }

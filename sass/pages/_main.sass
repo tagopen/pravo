@@ -2,7 +2,24 @@
 +ic
 @each $ic in help1, help2, help3, help4
   .ic-#{$ic}
-    +sb(#{$ic})  
+    +sb(#{$ic})
+.form
+  &-group
+    position: relative
+  &__input
+    height: auto
+    font: 400 18px/20px $os
+    padding: 12px 0
+    text-align: center
+    border: 2px solid $main_color_yellow 
+    &:focus
+      border-color: $main_color_blue
+    &::-moz-placeholder
+      color: #000
+      text-align: center
+    &::-webkit-input-placeholder 
+      color: #000 
+      text-align: center
 .btn
   &__call
     color: #000
@@ -12,6 +29,8 @@
     background-image: linear-gradient(to top, #fb0 0%, #ffe900 100%)
     +br(4px)
     border: 0
+    span
+      font: 400 18px/20px $os
 .g_heading
   display: inline-block
   font: 600 20px/30px $os
@@ -46,6 +65,7 @@ a:focus
   &__call
     font: 400 12px/12px $pts
     color: $main_color_blue
+    background-image: none
     background-color: transparent
     border: 0
 .phone
@@ -92,3 +112,29 @@ a:focus
     margin-bottom: 25px
   &__info
     font: 400 18px/20px $pts 
++comment("offer section style")     
+.offer
+  padding: 55px 0 100px
+  background: url(../img/offerbg.png) no-repeat center
+  +cover
+  &__heading
+    padding: 10px 15px
+    color: $main_color_blue
+    background-color: #fff
+    margin-bottom: 60px
+  &__subheading
+    font: 400 16px/20px $os
+    color: #fff
+    text-align: center  
+    margin-bottom: 60px
+    &--text  
+      color: $main_color_yellow
+  &__info
+    padding: 5px
+    font: 600 18px/20px $os
+    color: #fff
+    border: 2px dashed $main_color_blue 
+    text-align: center
+    margin-bottom: 30px
+  &__btn
+    padding: 10px 35px  

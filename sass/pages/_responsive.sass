@@ -1,5 +1,7 @@
 +r(768) 
   +comment('general style')
+  .btn__call
+    font: 400 18px/20px $pts 
   .g_heading
     font: 600 36px/40px $os 
   +comment("header style") 
@@ -7,7 +9,8 @@
     &__call
       font: 400 16px/16px $pts
       color: #000
-      padding: 10px 45px    
+      padding: 10px 45px   
+      background-image: linear-gradient(to top, #ffbb00 0%, #ffe900 100%) 
       +br(3px)    
   .phone
     padding-right: 20px
@@ -25,7 +28,6 @@
       font: 400 20px/36px $os
     &__btn
       padding: 10px 35px    
-      font: 400 18px/20px $pts 
   +comment("help section style")
   .help
     background: url(../img/helpbg.png) no-repeat center
@@ -33,3 +35,13 @@
     &__box
       padding: 45px 30px 25px   
       text-align: center       
+  +comment("offer section style") 
+  .offer
+    &__heading
+      margin-bottom: 90px    
+    &__subheading
+      font: 400 36px/40px $os
+    &__info
+      font: 600 30px/36px $os
+    &__btn
+      padding: 12px 40px 

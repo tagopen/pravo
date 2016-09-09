@@ -171,9 +171,6 @@
   border-radius: 4px;
   border: 0;
 }
-.btn__call span {
-  font: 400 18px/20px "Open Sans", sans-serif;
-}
 
 .g_heading {
   display: inline-block;
@@ -329,6 +326,29 @@ a:focus {
   padding: 10px 35px;
 }
 
+/* ---------------------------------------- */
+/* D E S T R O Y    S T Y L E               */
+/* ---------------------------------------- */
+.destroy {
+  padding: 50px 0;
+}
+.destroy__heading {
+  margin-bottom: 50px;
+  font: 400 20px/24px "Open Sans", sans-serif;
+}
+.destroy__subheading {
+  font: 400 16px/20px "Open Sans", sans-serif;
+  text-align: center;
+  margin: 0 0 70px;
+}
+.destroy__info {
+  display: inline-block;
+  font: 400 18px/22px "Open Sans", sans-serif;
+  color: #fff;
+  margin-bottom: 35px;
+  background-color: #1c97d1;
+}
+
 @media only screen and (min-width: 768px) {
   /* ---------------------------------------- */
   /* G E N E R A L    S T Y L E               */
@@ -411,4 +431,28 @@ a:focus {
   .offer__btn {
     padding: 12px 40px;
   }
+}
+/* ---------------------------------------- */
+/* D E S T R O Y    S T Y L E               */
+/* ---------------------------------------- */
+.destroy {
+  padding: 80px 0 200px;
+  background: url(../img/destroybg.png) no-repeat center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.destroy__heading {
+  font: 600 30px/36px "Open Sans", sans-serif;
+}
+.destroy__subheading {
+  font: 400 30px/36px "Open Sans", sans-serif;
+  margin: 0 0 90px;
+}
+.destroy__info {
+  padding: 5px;
+  font: 400 24px/28px "Open Sans", sans-serif;
 }

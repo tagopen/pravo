@@ -116,25 +116,37 @@
 .ic-help1:before {
   width: 166px;
   height: 166px;
-  background: url('../img/icons-sa8871e608e.png') 0 -496px no-repeat;
+  background: url('../img/icons-s9d3f43b4fc.png') 0 -741px no-repeat;
 }
 
 .ic-help2:before {
   width: 165px;
   height: 165px;
-  background: url('../img/icons-sa8871e608e.png') 0 -165px no-repeat;
+  background: url('../img/icons-s9d3f43b4fc.png') 0 -245px no-repeat;
 }
 
 .ic-help3:before {
   width: 166px;
   height: 166px;
-  background: url('../img/icons-sa8871e608e.png') 0 -330px no-repeat;
+  background: url('../img/icons-s9d3f43b4fc.png') 0 -575px no-repeat;
 }
 
 .ic-help4:before {
   width: 165px;
   height: 165px;
-  background: url('../img/icons-sa8871e608e.png') 0 0 no-repeat;
+  background: url('../img/icons-s9d3f43b4fc.png') 0 -410px no-repeat;
+}
+
+.ic-arrow:before {
+  width: 102px;
+  height: 119px;
+  background: url('../img/icons-s9d3f43b4fc.png') 0 0 no-repeat;
+}
+
+.ic-arrow320:before {
+  width: 87px;
+  height: 126px;
+  background: url('../img/icons-s9d3f43b4fc.png') 0 -119px no-repeat;
 }
 
 .form-group {
@@ -142,7 +154,7 @@
 }
 .form__input {
   height: auto;
-  font: 400 18px/20px "Open Sans", sans-serif;
+  font: 400 14px/16px "Open Sans", sans-serif;
   padding: 12px 0;
   text-align: center;
   border: 2px solid #fbd823;
@@ -150,11 +162,23 @@
 .form__input:focus {
   border-color: #1c97d1;
 }
+.form__input:-ms-input-placeholder {
+  color: #000;
+  text-align: center;
+}
+.form__input:-moz-placeholder {
+  color: #000;
+  text-align: center;
+}
 .form__input::-moz-placeholder {
   color: #000;
   text-align: center;
 }
 .form__input::-webkit-input-placeholder {
+  color: #000;
+  text-align: center;
+}
+.form__input::placeholder {
   color: #000;
   text-align: center;
 }
@@ -172,12 +196,20 @@
   border: 0;
 }
 
-.g_heading {
+.g-heading {
   display: inline-block;
   font: 600 20px/30px "Open Sans", sans-serif;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+}
+
+.g-title {
+  display: inline-block;
+  font: 400 18px/20px "Open Sans", sans-serif;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
 }
 
 /* ---------------------------------------- */
@@ -325,6 +357,14 @@ a:focus {
 .offer__btn {
   padding: 10px 35px;
 }
+.offer__arrow {
+  position: relative;
+}
+.offer__arrow .ic {
+  position: absolute;
+  top: 50px;
+  right: 0;
+}
 
 /* ---------------------------------------- */
 /* D E S T R O Y    S T Y L E               */
@@ -334,7 +374,7 @@ a:focus {
 }
 .destroy__heading {
   margin-bottom: 50px;
-  font: 400 20px/24px "Open Sans", sans-serif;
+  color: #000;
 }
 .destroy__subheading {
   font: 400 16px/20px "Open Sans", sans-serif;
@@ -343,6 +383,7 @@ a:focus {
 }
 .destroy__info {
   display: inline-block;
+  padding: 5px;
   font: 400 18px/22px "Open Sans", sans-serif;
   color: #fff;
   margin-bottom: 35px;
@@ -357,8 +398,16 @@ a:focus {
     font: 400 18px/20px "PT Sans", sans-serif;
   }
 
-  .g_heading {
+  .g-heading {
     font: 600 36px/40px "Open Sans", sans-serif;
+  }
+
+  .g-title {
+    font: 400 30px/36px "Open Sans", sans-serif;
+  }
+
+  .form__input {
+    font: 400 18px/20px "Open Sans", sans-serif;
   }
 
   /* ---------------------------------------- */
@@ -431,28 +480,28 @@ a:focus {
   .offer__btn {
     padding: 12px 40px;
   }
-}
-/* ---------------------------------------- */
-/* D E S T R O Y    S T Y L E               */
-/* ---------------------------------------- */
-.destroy {
-  padding: 80px 0 200px;
-  background: url(../img/destroybg.png) no-repeat center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-.destroy__heading {
-  font: 600 30px/36px "Open Sans", sans-serif;
-}
-.destroy__subheading {
-  font: 400 30px/36px "Open Sans", sans-serif;
-  margin: 0 0 90px;
-}
-.destroy__info {
-  padding: 5px;
-  font: 400 24px/28px "Open Sans", sans-serif;
+  .offer__arrow .ic {
+    top: 70px;
+    right: 50px;
+  }
+
+  /* ---------------------------------------- */
+  /* D E S T R O Y    S T Y L E               */
+  /* ---------------------------------------- */
+  .destroy {
+    padding: 80px 0 200px;
+    background: url(../img/destroybg.png) no-repeat center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .destroy__subheading {
+    margin: 0 0 90px;
+  }
+  .destroy__info {
+    font: 400 24px/28px "Open Sans", sans-serif;
+  }
 }

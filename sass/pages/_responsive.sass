@@ -2,8 +2,13 @@
   +comment('general style')
   .btn__call
     font: 400 18px/20px $pts 
-  .g_heading
+  .g-heading
     font: 600 36px/40px $os 
+  .g-title
+    font: 400 30px/36px $os
+  .form
+    &__input
+      font: 400 18px/20px $os  
   +comment("header style") 
   .navbar
     &__call
@@ -45,16 +50,16 @@
       font: 600 30px/36px $os
     &__btn
       padding: 12px 40px 
-+comment("destroy style")       
-.destroy
-  padding: 80px 0 200px 
-  background: url(../img/destroybg.png) no-repeat center
-  +cover
-  &__heading
-    font: 600 30px/36px $os
-  &__subheading
-    font: 400 30px/36px $os
-    margin: 0 0 90px  
-  &__info
-    padding: 5px
-    font: 400 24px/28px $os  
+    &__arrow
+      .ic
+        top: 70px
+        right: 50px  
+  +comment("destroy style")       
+  .destroy
+    padding: 80px 0 200px 
+    background: url(../img/destroybg.png) no-repeat center
+    +cover
+    &__subheading
+      margin: 0 0 90px  
+    &__info
+      font: 400 24px/28px $os  

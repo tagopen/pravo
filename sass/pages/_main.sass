@@ -1,6 +1,6 @@
 +comment('general style')
 +ic
-@each $ic in help1, help2, help3, help4
+@each $ic in help1, help2, help3, help4, arrow, arrow320
   .ic-#{$ic}
     +sb(#{$ic})
 .form
@@ -8,17 +8,14 @@
     position: relative
   &__input
     height: auto
-    font: 400 18px/20px $os
+    font: 400 14px/16px $os
     padding: 12px 0
     text-align: center
     border: 2px solid $main_color_yellow 
     &:focus
       border-color: $main_color_blue
-    &::-moz-placeholder
+    +placeholder
       color: #000
-      text-align: center
-    &::-webkit-input-placeholder 
-      color: #000 
       text-align: center
 .btn
   &__call
@@ -29,12 +26,18 @@
     background-image: linear-gradient(to top, #fb0 0%, #ffe900 100%)
     +br(4px)
     border: 0
-.g_heading
+.g-heading
   display: inline-block
   font: 600 20px/30px $os
   text-transform: uppercase
   text-align: center
   margin: 0    
+.g-title
+  display: inline-block
+  font: 400 18px/20px $os
+  text-transform: uppercase
+  margin: 0
+  text-align: center  
 +comment("home page style")
 html
   overflow-x: hidden
@@ -136,18 +139,25 @@ a:focus
     margin-bottom: 30px
   &__btn
     padding: 10px 35px  
+  &__arrow
+    position: relative
+    .ic
+      position: absolute
+      top: 50px
+      right: 0  
 +comment("destroy style")       
 .destroy
   padding: 50px 0
   &__heading
     margin-bottom: 50px
-    font: 400 20px/24px $os
+    color: #000
   &__subheading
     font: 400 16px/20px $os
     text-align: center
     margin: 0 0 70px
   &__info
     display: inline-block  
+    padding: 5px
     font: 400 18px/22px $os
     color: #fff
     margin-bottom: 35px

@@ -24,6 +24,30 @@ $(function() {
   });
 });
 
+// Equal Height function
+$.fn.equialHeight = function() {
+  var $tallestcolumn = 0;
+  var $currentHeight = 0;
+  $.each($(this), function (index, value) {
+    $currentHeight = $(this).height();
+    if($currentHeight > $tallestcolumn)
+    {
+      $tallestcolumn = $currentHeight;
+    }
+  });
+  $(this).height($tallestcolumn);
+  return $(this);
+} 
+
+if( $( window ).width() >= 768 ) {
+  $('.help__img .ic').equialHeight();
+  $('.help__box--a .help__title').equialHeight();
+  $('.help__box--a .help__info').equialHeight();
+  $('.help__box--b .help__title').equialHeight();
+  $('.help__box--b .help__info').equialHeight();
+}
+
+
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 /*$(function() {
     $('a.page-scroll').bind('click', function(event) {
@@ -88,8 +112,6 @@ $('.dropdown, .dropup').each(function() {
     $('.navbar-toggle:visible').click();
 });*/
 
-// Equal height
-/*$('.equial').equialHeight();*/
 
 /*$('.slider').slick({
   dots: true,

@@ -1,4 +1,7 @@
 +r(768) 
+  +comment('general style')
+  .g_heading
+    font: 600 36px/40px $os 
   +comment("header style") 
   .navbar
     &__call
@@ -22,4 +25,11 @@
       font: 400 20px/36px $os
     &__btn
       padding: 10px 35px    
-      font: 400 18px/20px $pts      
+      font: 400 18px/20px $pts 
+  +comment("help section style")
+  .help
+    background: url(../img/helpbg.png) no-repeat center
+    +cover
+    &__box
+      padding: 45px 30px 25px   
+      text-align: center       

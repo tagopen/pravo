@@ -26,9 +26,9 @@
       margin-bottom: 10px
   .content
     &__box
-      padding-top: 80px    
+      padding-top: 20px    
     &__heading
-      font: 400 30px/36px $os
+      font: 400 28px/32px $os
     &__list--item
       font: 400 20px/36px $os
     &__btn
@@ -63,3 +63,30 @@
       margin: 0 0 90px  
     &__info
       font: 400 24px/28px $os  
+  +comment("about section style")   
+  .about  
+    padding: 45px 0 75px    
+    &__title
+      margin-bottom: 40px
+    &__box
+      padding: 0
+      .ic
+        position: static
+    &__info
+      font: 400 24px/28px $os
+      margin-bottom: 0  
+    &__img
+      margin-bottom: 40px  
+    &__btn
+      +br(4px)  
++r(968)    
+  +comment("header style") 
+  .content
+    &__box
+      padding-top: 80px   
+    &__heading
+      font: 400 30px/36px $os  
+  +comment("about section style")   
+  .about  
+    &__box
+      padding: 100px 60px 0   

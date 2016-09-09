@@ -1,6 +1,6 @@
 +comment('general style')
 +ic
-@each $ic in help1, help2, help3, help4, arrow, arrow320
+@each $ic in help1, help2, help3, help4, arrow, arrow320, offerarrow, offerarrow320
   .ic-#{$ic}
     +sb(#{$ic})
 .form
@@ -21,7 +21,7 @@
   &__call
     color: #000
     font: 400 14px/20px $pts
-    padding: 10px 15px    
+    padding: 13px 15px    
     background-color: $btn_color
     background-image: linear-gradient(to top, #fb0 0%, #ffe900 100%)
     +br(4px)
@@ -138,14 +138,14 @@ a:focus
     text-align: center
     margin-bottom: 30px
   &__btn
-    padding: 10px 35px  
+    padding: 10px 40px  
   &__arrow
     position: relative
     .ic
       position: absolute
       top: 50px
       right: 0  
-+comment("destroy style")       
++comment("destroy section style")       
 .destroy
   padding: 50px 0
   &__heading
@@ -162,3 +162,35 @@ a:focus
     color: #fff
     margin-bottom: 35px
     background-color: $main_color_blue
+  &__btn
+    width: 100%  
++comment("about section style")   
+.about  
+  padding: 45px 0 60px
+  background: url(../img/aboutbg.png) no-repeat center
+  +cover
+  &__title
+    color: #fff
+    margin-bottom: 80px
+  &__box
+    position: relative
+    .ic
+      position: absolute
+      right: -10px  
+  &__info
+    color: #fff
+    font: 400 16px/20px $os
+    margin-bottom: 30px  
+    text-align: center
+  &__img
+    margin-bottom: 25px  
+    text-align: center
+    img
+      display: inline-block
+  &__btn
+    color: #fff
+    background-color: $main_color_blue   
+    border: 0
+    padding: 15px 25px
+    font: 400 14px/16px $pts
+    text-transform: uppercase

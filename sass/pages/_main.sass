@@ -12,11 +12,18 @@
     padding: 12px 0
     text-align: center
     border: 2px solid $main_color_yellow 
+    color: #000
     &:focus
       border-color: $main_color_blue
     +placeholder
       color: #000
       text-align: center
+    &--color
+      color: #fff 
+      +placeholder
+        color: #fff 
+    &--bg
+      background-color: transparent
 .btn
   &__call
     color: #000
@@ -194,3 +201,257 @@ a:focus
     padding: 15px 25px
     font: 400 14px/16px $pts
     text-transform: uppercase
++comment("exp section style")     
+.exp
+  padding: 50px 0 50px
+  &__title
+    color: #000
+    margin-bottom: 55px
+  &__info
+    font: 400 16px/20px $os
+    color: #000
+    text-align: center
+    margin-bottom: 20px
+    &--text
+      color: $main_color_blue 
+      font-weight: 600
+  &__img
+    text-align: center
+    margin-bottom: 20px
+    img
+      display: inline-block    
+  &__btn
+    display: inline-block
+    &:hover,
+    &:focus,
+    &:active
+      color: #000   
+  &--right
+    text-align: center 
++comment("rule section style")   
+.rule
+  padding: 45px 0 80px    
+  background: url(../img/rule.jpg) no-repeat center
+  +cover 
+  &__title
+    color: #fff
+    margin-bottom: 50px
+  &__info
+    @extend .destroy__info  
+  &__btn
+    @extend .destroy__btn  
++comment("scheme section style")  
+.scheme
+  padding: 40px 0 0   
+  &__title
+    color: #000
+    margin-bottom: 30px
+  &__img
+    position: relative
+    margin-bottom: 70px 
+    img
+      margin: 0 auto 
+  &__text
+    position: absolute
+    margin: 0
+    max-width: 140px
+    text-align: center
+    &--small
+      display: block
+      font: 300 italic 12px/14px $os
+    &1
+      top: 0
+      left: 52% 
+    &2
+      top: 90px
+      left: 52%
+    &3
+      top: 165px
+      left: 57%     
+    &4
+      top: 260px
+      left: 50%
+      margin-left: -80px 
+    &5
+      top: 345px
+      left: 50%
+      margin-left: -80px 
+    &6
+      top: 405px
+      left: 50%
+      margin-left: -80px
+    &7
+      top: 475px
+      left: 50%
+      margin-left: -80px
+    &8
+      top: 540px
+      left: 50%
+      margin-left: -80px
+    &9
+      top: 655px
+      left: 65%   
+    &10
+      top: 740px
+      left: 58%  
+    &-1
+      top: 0
+      right: 60%
+    &-2
+      top: 90px
+      right: 60%
+    &-3
+      top: 740px
+      right: 55%  
+  &__sides  
+    padding: 15px
+    border: 2px dashed $main_color_blue
+    margin-bottom: 50px
+.side
+  &__box
+    display: inline-block
+    width: 100%
+    float: left
+    &1
+      margin-bottom: 30px
+  &__text
+    display: inline-block
+    color: #000
+    font: 400 14px/18px $os
+    margin-bottom: 0 
+    float: right
+  &__line
+    display: inline-block
+    width: 40px
+    height: 5px
+    vertical-align: middle
+    &1
+      background-color: $main_color_blue
+    &2
+      background-color: $main_color_yellow 
++comment("company section style") 
+.company
+  padding: 40px 0 0
+  &__title
+    color: #000
+    margin-bottom: 45px
+  &__img
+    margin-bottom: 20px  
+  &__info
+    position: relative
+    padding: 30px 20px
+    background-color: $main_color_yellow
+    margin-bottom: 40px
+    &--arrow
+      position: absolute
+      left: -18px
+      width: 0
+      height: 0
+      border: 20px solid transparent   
+      border-right-color: $main_color_yellow
+      border-left: 0
+  &__text 
+    color: #000
+    font: 400 18px/24px $os 
+    &--name
+      font-weight: 600 
+      margin-bottom: 30px
+  &__list
+    padding-left: 0
+    &--item
+      @extend .content__list--item  
+  &__btn
+    margin-bottom: 40px  
+  &__subtitle
+    color: #000
+    margin: 0 0 30px
+    font: 400 18px/20px $os    
+.employee
+  &__box
+    text-align: center
+    margin-bottom: 20px
+  &__img
+    margin: 0 auto
+  &__name
+    color: #000
+    margin: 20px 0
+    font: 600 16px/20px $os  
+  &__btn
+    color: #000
+    font: 300 italic 16px/20px $os   
+  &__info,
+  &__descr
+    color: #000
+    font: 400 16px/20px $os   
+    margin-bottom: 0
++comment("sertificate section style")   
+.sertificates
+  background: url(../img/ser.jpg) no-repeat center   
+  +cover
++comment("subscribe section style")    
+.subscribe
+  background: url(../img/sb.jpg) no-repeat center 
+  +cover
+  padding: 50px 0 25px  
+  &__title
+    margin-bottom: 40px
+    display: inline-block
+    padding: 5px
+    color: #fff
+    background-color: $main_color_blue 
++comment("subscribe section style") 
+.contact
+  &__title
+    margin-bottom: 40px
+  &__descr
+    margin-bottom: 25px
+    text-align: center
+    .fa 
+      float: left
+      color: $main_color_yellow
+      font-size: 18px 
+  &__address,
+  &__call
+    &--info
+      color: #000
+      font: 300 14px/18px $os  
+  &__call--info   
+    padding-bottom: 25px
+    margin-bottom: 0
+    border-bottom: 1px solid $main_color_yellow
+  &__form
+    padding-bottom: 25px  
+  &__heading
+    color: $main_color_blue
+    font: 400 16px/20px $pts  
+    text-transform: uppercase
+    margin: 0 0 25px  
+  &__input
+    height: auto  
+    font: 400 14px/16px $os
+    padding: 10px 15px 10px 20px
+    border: 2px solid $main_color_yellow 
+    color: #000
+    &:focus
+      border-color: $main_color_blue
+    +placeholder
+      color: #000
+    &--color
+      color: #fff 
+      +placeholder
+        color: #fff 
+    &--bg
+      background-color: transparent 
+.form__message
+  resize: none    
+.mobile
+  margin-bottom: 40px
+  &__container
+    text-align: center
+    .fa
+      float: left
+      color: $main_color_yellow
+      font-size: 18px
+  &__number
+    color: $main_color_blue 
+    font: 400 16px/20px $os  

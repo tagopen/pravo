@@ -79,7 +79,126 @@
       margin-bottom: 40px  
     &__btn
       +br(4px)  
-+r(968)    
+  +comment("exp section style")  
+  .exp
+    padding: 50px 0 25px
+    background: url(../img/expbg.png) no-repeat center
+    +cover
+    &__title
+      margin-bottom: 20px  
+    &__info
+      padding-top: 160px
+      font: 400 24px/28px $os  
+      text-align: right  
+      margin-bottom: 60px
+    &__col--right
+      float: right  
+    &--right
+      text-align: right
+    &__img
+      margin-bottom: 0    
+  +comment("rule section style")   
+  .rule
+    padding: 50px 0 80px     
+  +comment("scheme + company section style") 
+  .section-scheme-company
+    background: url(../img/big.jpg) no-repeat center
+    +cover
+    background-position: 50% top
+  +comment("scheme section style")  
+  .scheme
+    &__sides
+      padding: 30px 
+      margin-bottom: 80px
+    &__title
+      margin-bottom: 100px
+    &__text
+      max-width: 140px
+      text-align: center
+      &1
+        top: 25px
+        left: -15px 
+      &2
+        top: 25px
+        left: 80px
+      &3
+        top: 60px
+        left: 195px     
+      &4
+        top: -50px
+        left: 220px  
+      &5
+        top: 30px
+        left: 370px   
+      &6
+        top: -50px
+        left: 455px
+      &7
+        top: 30px
+        left: 525px
+      &8
+        top: -60px
+        left: 600px
+      &9
+        top: 70px
+        left: 525px   
+      &10
+        top: 10px
+        left: 655px  
+      &-1
+        top: 105px
+        left: -15px
+      &-2
+        top: 105px
+        left: 80px
+      &-3
+        top: 105px
+        left: 660px 
+  .side
+    &__box
+      display: inline-block
+      width: 50%
+      float: left
+      margin-bottom: 0
+    &__text
+      float: left
+      font: 400 18px/20px $os  
+      margin-right: 15px           
+  +comment("company section style") 
+  .company
+    &__title
+      margin-bottom: 0 
+    &__info
+      margin-top: 85px  
+    &__text 
+      color: #000
+      font: 400 20px/28px $os 
+      &--name
+        font-weight: 600 
+    &__subtitle
+      font: 400 24px/28px $os  
+  +comment("contact section style") 
+  .contact
+    &__descr
+    .fa
+      color: $main_color_yellow
+      font-size: 24px 
+    &__address,
+    &__call
+      &--info
+        font: 300 18px/20px $os 
+    &__heading
+      font: 400 24px/28px $pts 
+      margin: 0 0 40px
+    &__form
+      margin-bottom: 70px        
+  .mobile
+    &__container
+      .fa
+        font-size: 24px
+    &__number
+      font: 400 20px/24px $os                  
++r(992)    
   +comment("header style") 
   .content
     &__box
@@ -89,4 +208,104 @@
   +comment("about section style")   
   .about  
     &__box
-      padding: 100px 60px 0   
+      padding: 100px 60px 0  
+  +comment("scheme section style")  
+  .scheme 
+    &__title
+      margin-bottom: 120px
+    &__text
+      max-width: 140px
+      text-align: center
+      &1
+        top: 40px
+        left: -10px 
+      &2
+        top: 40px
+        left: 115px
+      &3
+        top: 80px
+        left: 265px     
+      &4
+        top: -45px
+        left: 300px  
+      &5
+        top: 35px
+        left: 470px   
+      &6
+        top: -55px
+        left: 580px
+      &7
+        top: 30px
+        left: 675px
+      &8
+        top: -60px
+        left: 780px
+      &9
+        top: 80px
+        left: 700px   
+      &10
+        top: 35px
+        left: 875px  
+      &-1
+        top: 140px
+        left: -10px
+      &-2
+        top: 140px
+        left: 115px
+      &-3
+        top: 135px
+        left: 875px                 
+  +comment("subscribe section style")    
+  .subscribe
+    padding: 75px 0 40px  
++r(1200) 
+  +comment("company section style")
+  .company
+    &__img
+      margin-top: -75px
+  +comment("scheme section style")  
+  .scheme
+    &__title
+      margin-bottom: 150px
+    &__text
+      max-width: 160px
+      text-align: center
+      &1
+        top: 60px
+        left: 0  
+      &2
+        top: 60px
+        left: 160px
+      &3
+        top: 110px
+        left: 330px     
+      &4
+        top: -40px
+        left: 350px  
+      &5
+        top: 50px
+        left: 565px   
+      &6
+        top: -90px
+        left: 685px
+      &7
+        top: 50px
+        left: 805px
+      &8
+        top: -50px
+        left: 930px
+      &9
+        top: 100px
+        left: 870px   
+      &10
+        top: 50px
+        left: 1070px  
+      &-1
+        top: 175px
+        left: 0
+      &-2
+        top: 175px
+        left: 160px
+      &-3
+        top: 175px
+        left: 1070px  

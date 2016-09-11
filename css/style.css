@@ -170,6 +170,7 @@
   padding: 12px 0;
   text-align: center;
   border: 2px solid #fbd823;
+  color: #000;
 }
 .form__input:focus {
   border-color: #1c97d1;
@@ -193,6 +194,27 @@
 .form__input::placeholder {
   color: #000;
   text-align: center;
+}
+.form__input--color {
+  color: #fff;
+}
+.form__input--color:-ms-input-placeholder {
+  color: #fff;
+}
+.form__input--color:-moz-placeholder {
+  color: #fff;
+}
+.form__input--color::-moz-placeholder {
+  color: #fff;
+}
+.form__input--color::-webkit-input-placeholder {
+  color: #fff;
+}
+.form__input--color::placeholder {
+  color: #fff;
+}
+.form__input--bg {
+  background-color: transparent;
 }
 
 .btn__call {
@@ -300,11 +322,11 @@ a:focus {
   padding-left: 0;
   margin-bottom: 25px;
 }
-.content__list--item {
+.content__list--item, .company__list--item {
   list-style-type: none;
   font: 400 14px/20px "Open Sans", sans-serif;
 }
-.content__list--item:before {
+.content__list--item:before, .company__list--item:before {
   content: "";
   font-family: "FontAwesome";
   margin-right: 10px;
@@ -393,7 +415,7 @@ a:focus {
   text-align: center;
   margin: 0 0 70px;
 }
-.destroy__info {
+.destroy__info, .rule__info {
   display: inline-block;
   padding: 5px;
   font: 400 18px/22px "Open Sans", sans-serif;
@@ -401,7 +423,7 @@ a:focus {
   margin-bottom: 35px;
   background-color: #1c97d1;
 }
-.destroy__btn {
+.destroy__btn, .rule__btn {
   width: 100%;
 }
 
@@ -449,6 +471,383 @@ a:focus {
   padding: 15px 25px;
   font: 400 14px/16px "PT Sans", sans-serif;
   text-transform: uppercase;
+}
+
+/* ---------------------------------------- */
+/* E X P    S E C T I O N    S T Y L E      */
+/* ---------------------------------------- */
+.exp {
+  padding: 50px 0 50px;
+}
+.exp__title {
+  color: #000;
+  margin-bottom: 55px;
+}
+.exp__info {
+  font: 400 16px/20px "Open Sans", sans-serif;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.exp__info--text {
+  color: #1c97d1;
+  font-weight: 600;
+}
+.exp__img {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.exp__img img {
+  display: inline-block;
+}
+.exp__btn {
+  display: inline-block;
+}
+.exp__btn:hover, .exp__btn:focus, .exp__btn:active {
+  color: #000;
+}
+.exp--right {
+  text-align: center;
+}
+
+/* ---------------------------------------- */
+/* R U L E    S E C T I O N    S T Y L E    */
+/* ---------------------------------------- */
+.rule {
+  padding: 45px 0 80px;
+  background: url(../img/rule.jpg) no-repeat center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.rule__title {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+/* ------------------------------------------ */
+/* S C H E M E    S E C T I O N    S T Y L E  */
+/* ------------------------------------------ */
+.scheme {
+  padding: 40px 0 0;
+}
+.scheme__title {
+  color: #000;
+  margin-bottom: 30px;
+}
+.scheme__img {
+  position: relative;
+  margin-bottom: 70px;
+}
+.scheme__img img {
+  margin: 0 auto;
+}
+.scheme__text {
+  position: absolute;
+  margin: 0;
+  max-width: 140px;
+  text-align: center;
+}
+.scheme__text--small {
+  display: block;
+  font: 300 italic 12px/14px "Open Sans", sans-serif;
+}
+.scheme__text1 {
+  top: 0;
+  left: 52%;
+}
+.scheme__text2 {
+  top: 90px;
+  left: 52%;
+}
+.scheme__text3 {
+  top: 165px;
+  left: 57%;
+}
+.scheme__text4 {
+  top: 260px;
+  left: 50%;
+  margin-left: -80px;
+}
+.scheme__text5 {
+  top: 345px;
+  left: 50%;
+  margin-left: -80px;
+}
+.scheme__text6 {
+  top: 405px;
+  left: 50%;
+  margin-left: -80px;
+}
+.scheme__text7 {
+  top: 475px;
+  left: 50%;
+  margin-left: -80px;
+}
+.scheme__text8 {
+  top: 540px;
+  left: 50%;
+  margin-left: -80px;
+}
+.scheme__text9 {
+  top: 655px;
+  left: 65%;
+}
+.scheme__text10 {
+  top: 740px;
+  left: 58%;
+}
+.scheme__text-1 {
+  top: 0;
+  right: 60%;
+}
+.scheme__text-2 {
+  top: 90px;
+  right: 60%;
+}
+.scheme__text-3 {
+  top: 740px;
+  right: 55%;
+}
+.scheme__sides {
+  padding: 15px;
+  border: 2px dashed #1c97d1;
+  margin-bottom: 50px;
+}
+
+.side__box {
+  display: inline-block;
+  width: 100%;
+  float: left;
+}
+.side__box1 {
+  margin-bottom: 30px;
+}
+.side__text {
+  display: inline-block;
+  color: #000;
+  font: 400 14px/18px "Open Sans", sans-serif;
+  margin-bottom: 0;
+  float: right;
+}
+.side__line {
+  display: inline-block;
+  width: 40px;
+  height: 5px;
+  vertical-align: middle;
+}
+.side__line1 {
+  background-color: #1c97d1;
+}
+.side__line2 {
+  background-color: #fbd823;
+}
+
+/* -------------------------------------------- */
+/* C O M P A N Y    S E C T I O N    S T Y L E  */
+/* -------------------------------------------- */
+.company {
+  padding: 40px 0 0;
+}
+.company__title {
+  color: #000;
+  margin-bottom: 45px;
+}
+.company__img {
+  margin-bottom: 20px;
+}
+.company__info {
+  position: relative;
+  padding: 30px 20px;
+  background-color: #fbd823;
+  margin-bottom: 40px;
+}
+.company__info--arrow {
+  position: absolute;
+  left: -18px;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-right-color: #fbd823;
+  border-left: 0;
+}
+.company__text {
+  color: #000;
+  font: 400 18px/24px "Open Sans", sans-serif;
+}
+.company__text--name {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+.company__list {
+  padding-left: 0;
+}
+.company__btn {
+  margin-bottom: 40px;
+}
+.company__subtitle {
+  color: #000;
+  margin: 0 0 30px;
+  font: 400 18px/20px "Open Sans", sans-serif;
+}
+
+.employee__box {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.employee__img {
+  margin: 0 auto;
+}
+.employee__name {
+  color: #000;
+  margin: 20px 0;
+  font: 600 16px/20px "Open Sans", sans-serif;
+}
+.employee__btn {
+  color: #000;
+  font: 300 italic 16px/20px "Open Sans", sans-serif;
+}
+.employee__info, .employee__descr {
+  color: #000;
+  font: 400 16px/20px "Open Sans", sans-serif;
+  margin-bottom: 0;
+}
+
+/* ---------------------------------------------------- */
+/* S E R T I F I C A T E    S E C T I O N    S T Y L E  */
+/* ---------------------------------------------------- */
+.sertificates {
+  background: url(../img/ser.jpg) no-repeat center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ------------------------------------------------ */
+/* S U B S C R I B E    S E C T I O N    S T Y L E  */
+/* ------------------------------------------------ */
+.subscribe {
+  background: url(../img/sb.jpg) no-repeat center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  padding: 50px 0 25px;
+}
+.subscribe__title {
+  margin-bottom: 40px;
+  display: inline-block;
+  padding: 5px;
+  color: #fff;
+  background-color: #1c97d1;
+}
+
+/* ------------------------------------------------ */
+/* S U B S C R I B E    S E C T I O N    S T Y L E  */
+/* ------------------------------------------------ */
+.contact__title {
+  margin-bottom: 40px;
+}
+.contact__descr {
+  margin-bottom: 25px;
+  text-align: center;
+}
+.contact__descr .fa {
+  float: left;
+  color: #fbd823;
+  font-size: 18px;
+}
+.contact__address--info, .contact__call--info {
+  color: #000;
+  font: 300 14px/18px "Open Sans", sans-serif;
+}
+.contact__call--info {
+  padding-bottom: 25px;
+  margin-bottom: 0;
+  border-bottom: 1px solid #fbd823;
+}
+.contact__form {
+  padding-bottom: 25px;
+}
+.contact__heading {
+  color: #1c97d1;
+  font: 400 16px/20px "PT Sans", sans-serif;
+  text-transform: uppercase;
+  margin: 0 0 25px;
+}
+.contact__input {
+  height: auto;
+  font: 400 14px/16px "Open Sans", sans-serif;
+  padding: 10px 15px 10px 20px;
+  border: 2px solid #fbd823;
+  color: #000;
+}
+.contact__input:focus {
+  border-color: #1c97d1;
+}
+.contact__input:-ms-input-placeholder {
+  color: #000;
+}
+.contact__input:-moz-placeholder {
+  color: #000;
+}
+.contact__input::-moz-placeholder {
+  color: #000;
+}
+.contact__input::-webkit-input-placeholder {
+  color: #000;
+}
+.contact__input::placeholder {
+  color: #000;
+}
+.contact__input--color {
+  color: #fff;
+}
+.contact__input--color:-ms-input-placeholder {
+  color: #fff;
+}
+.contact__input--color:-moz-placeholder {
+  color: #fff;
+}
+.contact__input--color::-moz-placeholder {
+  color: #fff;
+}
+.contact__input--color::-webkit-input-placeholder {
+  color: #fff;
+}
+.contact__input--color::placeholder {
+  color: #fff;
+}
+.contact__input--bg {
+  background-color: transparent;
+}
+
+.form__message {
+  resize: none;
+}
+
+.mobile {
+  margin-bottom: 40px;
+}
+.mobile__container {
+  text-align: center;
+}
+.mobile__container .fa {
+  float: left;
+  color: #fbd823;
+  font-size: 18px;
+}
+.mobile__number {
+  color: #1c97d1;
+  font: 400 16px/20px "Open Sans", sans-serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -502,7 +901,7 @@ a:focus {
   .content__heading {
     font: 400 28px/32px "Open Sans", sans-serif;
   }
-  .content__list--item {
+  .content__list--item, .company__list--item {
     font: 400 20px/36px "Open Sans", sans-serif;
   }
   .content__btn {
@@ -562,7 +961,7 @@ a:focus {
   .destroy__subheading {
     margin: 0 0 90px;
   }
-  .destroy__info {
+  .destroy__info, .rule__info {
     font: 400 24px/28px "Open Sans", sans-serif;
   }
 
@@ -594,8 +993,185 @@ a:focus {
     -ms-border-radius: 4px;
     border-radius: 4px;
   }
+
+  /* ---------------------------------------- */
+  /* E X P    S E C T I O N    S T Y L E      */
+  /* ---------------------------------------- */
+  .exp {
+    padding: 50px 0 25px;
+    background: url(../img/expbg.png) no-repeat center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  .exp__title {
+    margin-bottom: 20px;
+  }
+  .exp__info {
+    padding-top: 160px;
+    font: 400 24px/28px "Open Sans", sans-serif;
+    text-align: right;
+    margin-bottom: 60px;
+  }
+  .exp__col--right {
+    float: right;
+  }
+  .exp--right {
+    text-align: right;
+  }
+  .exp__img {
+    margin-bottom: 0;
+  }
+
+  /* ---------------------------------------- */
+  /* R U L E    S E C T I O N    S T Y L E    */
+  /* ---------------------------------------- */
+  .rule {
+    padding: 50px 0 80px;
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* S C H E M E    +    C O M P A N Y    S E C T I O N    S T Y L E  */
+  /* ---------------------------------------------------------------- */
+  .section-scheme-company {
+    background: url(../img/big.jpg) no-repeat center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-position: 50% top;
+  }
+
+  /* ------------------------------------------ */
+  /* S C H E M E    S E C T I O N    S T Y L E  */
+  /* ------------------------------------------ */
+  .scheme__sides {
+    padding: 30px;
+    margin-bottom: 80px;
+  }
+  .scheme__title {
+    margin-bottom: 100px;
+  }
+  .scheme__text {
+    max-width: 140px;
+    text-align: center;
+  }
+  .scheme__text1 {
+    top: 25px;
+    left: -15px;
+  }
+  .scheme__text2 {
+    top: 25px;
+    left: 80px;
+  }
+  .scheme__text3 {
+    top: 60px;
+    left: 195px;
+  }
+  .scheme__text4 {
+    top: -50px;
+    left: 220px;
+  }
+  .scheme__text5 {
+    top: 30px;
+    left: 370px;
+  }
+  .scheme__text6 {
+    top: -50px;
+    left: 455px;
+  }
+  .scheme__text7 {
+    top: 30px;
+    left: 525px;
+  }
+  .scheme__text8 {
+    top: -60px;
+    left: 600px;
+  }
+  .scheme__text9 {
+    top: 70px;
+    left: 525px;
+  }
+  .scheme__text10 {
+    top: 10px;
+    left: 655px;
+  }
+  .scheme__text-1 {
+    top: 105px;
+    left: -15px;
+  }
+  .scheme__text-2 {
+    top: 105px;
+    left: 80px;
+  }
+  .scheme__text-3 {
+    top: 105px;
+    left: 660px;
+  }
+
+  .side__box {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+  }
+  .side__text {
+    float: left;
+    font: 400 18px/20px "Open Sans", sans-serif;
+    margin-right: 15px;
+  }
+
+  /* -------------------------------------------- */
+  /* C O M P A N Y    S E C T I O N    S T Y L E  */
+  /* -------------------------------------------- */
+  .company__title {
+    margin-bottom: 0;
+  }
+  .company__info {
+    margin-top: 85px;
+  }
+  .company__text {
+    color: #000;
+    font: 400 20px/28px "Open Sans", sans-serif;
+  }
+  .company__text--name {
+    font-weight: 600;
+  }
+  .company__subtitle {
+    font: 400 24px/28px "Open Sans", sans-serif;
+  }
+
+  /* -------------------------------------------- */
+  /* C O N T A C T    S E C T I O N    S T Y L E  */
+  /* -------------------------------------------- */
+  .contact .fa {
+    color: #fbd823;
+    font-size: 24px;
+  }
+  .contact__address--info, .contact__call--info {
+    font: 300 18px/20px "Open Sans", sans-serif;
+  }
+  .contact__heading {
+    font: 400 24px/28px "PT Sans", sans-serif;
+    margin: 0 0 40px;
+  }
+  .contact__form {
+    margin-bottom: 70px;
+  }
+
+  .mobile__container .fa {
+    font-size: 24px;
+  }
+  .mobile__number {
+    font: 400 20px/24px "Open Sans", sans-serif;
+  }
 }
-@media only screen and (min-width: 968px) {
+@media only screen and (min-width: 992px) {
   /* ---------------------------------------- */
   /* H E A D E R    S T Y L E                 */
   /* ---------------------------------------- */
@@ -611,5 +1187,146 @@ a:focus {
   /* ---------------------------------------- */
   .about__box {
     padding: 100px 60px 0;
+  }
+
+  /* ------------------------------------------ */
+  /* S C H E M E    S E C T I O N    S T Y L E  */
+  /* ------------------------------------------ */
+  .scheme__title {
+    margin-bottom: 120px;
+  }
+  .scheme__text {
+    max-width: 140px;
+    text-align: center;
+  }
+  .scheme__text1 {
+    top: 40px;
+    left: -10px;
+  }
+  .scheme__text2 {
+    top: 40px;
+    left: 115px;
+  }
+  .scheme__text3 {
+    top: 80px;
+    left: 265px;
+  }
+  .scheme__text4 {
+    top: -45px;
+    left: 300px;
+  }
+  .scheme__text5 {
+    top: 35px;
+    left: 470px;
+  }
+  .scheme__text6 {
+    top: -55px;
+    left: 580px;
+  }
+  .scheme__text7 {
+    top: 30px;
+    left: 675px;
+  }
+  .scheme__text8 {
+    top: -60px;
+    left: 780px;
+  }
+  .scheme__text9 {
+    top: 80px;
+    left: 700px;
+  }
+  .scheme__text10 {
+    top: 35px;
+    left: 875px;
+  }
+  .scheme__text-1 {
+    top: 140px;
+    left: -10px;
+  }
+  .scheme__text-2 {
+    top: 140px;
+    left: 115px;
+  }
+  .scheme__text-3 {
+    top: 135px;
+    left: 875px;
+  }
+
+  /* ------------------------------------------------ */
+  /* S U B S C R I B E    S E C T I O N    S T Y L E  */
+  /* ------------------------------------------------ */
+  .subscribe {
+    padding: 75px 0 40px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* -------------------------------------------- */
+  /* C O M P A N Y    S E C T I O N    S T Y L E  */
+  /* -------------------------------------------- */
+  .company__img {
+    margin-top: -75px;
+  }
+
+  /* ------------------------------------------ */
+  /* S C H E M E    S E C T I O N    S T Y L E  */
+  /* ------------------------------------------ */
+  .scheme__title {
+    margin-bottom: 150px;
+  }
+  .scheme__text {
+    max-width: 160px;
+    text-align: center;
+  }
+  .scheme__text1 {
+    top: 60px;
+    left: 0;
+  }
+  .scheme__text2 {
+    top: 60px;
+    left: 160px;
+  }
+  .scheme__text3 {
+    top: 110px;
+    left: 330px;
+  }
+  .scheme__text4 {
+    top: -40px;
+    left: 350px;
+  }
+  .scheme__text5 {
+    top: 50px;
+    left: 565px;
+  }
+  .scheme__text6 {
+    top: -90px;
+    left: 685px;
+  }
+  .scheme__text7 {
+    top: 50px;
+    left: 805px;
+  }
+  .scheme__text8 {
+    top: -50px;
+    left: 930px;
+  }
+  .scheme__text9 {
+    top: 100px;
+    left: 870px;
+  }
+  .scheme__text10 {
+    top: 50px;
+    left: 1070px;
+  }
+  .scheme__text-1 {
+    top: 175px;
+    left: 0;
+  }
+  .scheme__text-2 {
+    top: 175px;
+    left: 160px;
+  }
+  .scheme__text-3 {
+    top: 175px;
+    left: 1070px;
   }
 }

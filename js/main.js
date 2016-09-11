@@ -45,6 +45,8 @@ if( $( window ).width() >= 768 ) {
   $('.help__box--a .help__info').equialHeight();
   $('.help__box--b .help__title').equialHeight();
   $('.help__box--b .help__info').equialHeight();
+  $('.employee__container').equialHeight();
+  $('.employee__name').equialHeight();
 }
 
 

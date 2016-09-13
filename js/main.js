@@ -4,6 +4,21 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+// Equal Height function
+$.fn.equialHeight = function() {
+  var $tallestcolumn = 0;
+  var $currentHeight = 0;
+  $.each($(this), function (index, value) {
+    $currentHeight = $(this).height();
+    if($currentHeight > $tallestcolumn)
+    {
+      $tallestcolumn = $currentHeight;
+    }
+  });
+  $(this).height($tallestcolumn);
+  return $(this);
+} 
+
 // Old browser notification
 $(function() { 
   $.reject({
@@ -23,23 +38,8 @@ $(function() {
     closeLink: 'Закрыть это уведомление',
   });
 });
-// Equal Height function
+// EqiualHeight initialize
 $(window).on('resize', function(){
-
-  $.fn.equialHeight = function() {
-    var $tallestcolumn = 0;
-    var $currentHeight = 0;
-    $.each($(this), function (index, value) {
-      $currentHeight = $(this).height();
-      if($currentHeight > $tallestcolumn)
-      {
-        $tallestcolumn = $currentHeight;
-      }
-    });
-    $(this).height($tallestcolumn);
-    return $(this);
-  } 
-
   if( $( window ).width() >= 768 ) {
     $('.help__img').equialHeight();
     $('.help__box--a .help__title').equialHeight();
@@ -48,11 +48,16 @@ $(window).on('resize', function(){
     $('.help__box--b .help__info').equialHeight();
     $('.employee__container').equialHeight();
     $('.employee__name').equialHeight();
-    $('.modal__height').equialHeight();
   }
 
 }).trigger('resize');
 
+// EquialHeight binding to bootstrap modal 
+$('#destroy').on('shown.bs.modal', function () {
+ if( $( window ).width() >= 768 ) {
+  $('.modal__height').equialHeight();
+ }
+});
 
 // Scroll to bottom block
 if( $( window ).width() >= 320 ) {
@@ -82,6 +87,7 @@ $(document).ready( function() {
   });
 });
 
+// Slick-slider to certificates
 $('.sertificates__slider').slick({
   slidesToShow: 2,
   slidesToScroll: 1,
@@ -109,7 +115,7 @@ $('.sertificates__slider').slick({
     }
   ]
 });
-
+// Slick-slider Init
 $('.case__slider').slick({
   slidesToShow: 1,
   slidesToScroll: 1,

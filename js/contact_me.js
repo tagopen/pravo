@@ -7,12 +7,12 @@ $(function() {
         },
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
-            $("[type=submit]").prop("disabled", true); //prevent submit behaviour
+            $("[type=submit]").prop("disabled", true).button('loading'); //prevent submit behaviour
             // get values from FORM
             var form = $form.attr('name');
-            var name = $form.find("input[name=name]").val();
-            var email = $form.find("input[name=email]").val();
-            var phone = $form.find("input[name=phone]").val();
+            var name = $form.find("[name=name]").val();
+            var email = $form.find("[name=email]").val();
+            var phone = $form.find("[name=phone]").val();
             var message = $form.find("[name=message]").val();
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
@@ -43,7 +43,7 @@ $(function() {
                     // Redirect success
                     document.location.href='./thanks.html';
                     // remove prevent submit behaviour
-                    $("[type=submit]").prop("disabled", false);  
+                    $("[type=submit]").prop("disabled", false).button('loading');  
 
                     //clear all fields
                     $('.contactForm').trigger("reset");
@@ -57,7 +57,7 @@ $(function() {
                     $('.success > .alert-danger').append('</div>');
 
                     // remove prevent submit behaviour
-                    $("[type=submit]").prop("disabled", false); 
+                    $("[type=submit]").prop("disabled", false).button('loading'); 
 
                     //clear all fields
                     $('.contactForm').trigger("reset");

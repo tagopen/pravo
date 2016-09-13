@@ -215,7 +215,8 @@
             </div>
 
             <div class="text-center col-xs-12 col-sm-5 col-md-4 ">
-              <button class="btn__call destroy__btn"><span>Записаться на консультацию</span></button> 
+              <div id="success"></div>
+              <button type="submit" class="btn__call destroy__btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...">Записаться на консультацию</button>  
             </div>
           </form>
         </div>
@@ -289,7 +290,8 @@
             <input aria-invalid="false" class="form-control form__input form__input--bg form__input--color form__phone" placeholder="Ваш номер телефона" required="" data-validation-required-message="Please enter your phone number." name="phone" type="tel">
           </div>
           <div class="text-center col-xs-12">
-            <button class="btn__call rule__btn"><span>Получить вариант решения</span></button> 
+            <div id="success"></div>
+            <button type="submit" class="btn__call rule__btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...">Получить вариант решения</button>  
           </div>
         </form>
       </div>
@@ -532,7 +534,8 @@
         </div>
 
         <div class="text-center col-xs-12 col-sm-5 col-md-4 ">
-          <button class="btn__call destroy__btn"><span>Получить статью</span></button> 
+          <div id="success"></div>
+          <button type="submit" class="btn__call destroy__btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...">Получить статью</button>  
         </div>
       </form>
     </div>
@@ -591,7 +594,8 @@
                 <textarea rows="4" class="form-control contact__input form__message" placeholder="Ваше сообщение" required="" data-validation-required-message="Please enter your message." name="message"></textarea>
               </div>
               <div class="text-center col-xs-12 ">
-                <button class="btn__call destroy__btn"><span>Оставить заявку</span></button> 
+                <div id="success"></div>
+                <button type="submit" class="btn__call destroy__btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...">Оставить заявку</button> 
               </div>
             </form>
           </div>
@@ -629,7 +633,8 @@
                         <input aria-invalid="false" class="form-control form__input modal__input form__phone" placeholder="Ваш телефон" required="" data-validation-required-message="Please enter your phone number." name="phone" type="tel">
                       </div>
                       <div class="text-center col-xs-12 ">
-                        <button class="btn__call destroy__btn"><span>Получить консультацию</span></button> 
+                        <div id="success"></div>
+                        <button type="submit" class="btn__call destroy__btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...">Получить консультацию</button>
                       </div>
                     </form>
                   </div>
@@ -667,7 +672,8 @@
                         <input aria-invalid="false" class="form-control form__input modal__input form__mail" placeholder="Ваш E-mail" required="" data-validation-required-message="Please enter your phone number." name="email" type="email">
                       </div>
                       <div class="text-center col-xs-12 ">
-                        <button class="btn__call destroy__btn"><span>Получить консультацию</span></button> 
+                        <div id="success"></div>
+                        <button type="submit" class="btn__call destroy__btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...">Получить консультацию</button> 
                       </div>
                     </form>
                   </div>
@@ -705,7 +711,8 @@
                         <input aria-invalid="false" class="form-control form__input modal__input form__mail" placeholder="Ваш E-mail" required="" data-validation-required-message="Please enter your phone number." name="email" type="email">
                       </div>
                       <div class="text-center col-xs-12 ">
-                        <button class="btn__call destroy__btn"><span>Получить консультацию</span></button> 
+                        <div id="success"></div>
+                        <button type="submit" class="btn__call destroy__btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...">Получить консультацию</button>
                       </div>
                     </form>
                   </div>
@@ -729,7 +736,7 @@
               <div class="row">
 
                 <div class="col-xs-12 col-sm-6 col-lg-7">
-                  <div class="text-left modal__info">
+                  <div class="modal__height text-left modal__info">
                     <p class="modal__info--text">Происходит конультация, на которой мы определяемся 
                       с названием компании, размером уставного капитала, типом налогообложения и другими нюансами.</p>
                     <p class="modal__info--text">После чего Ваше участие больше не нужно.</p>
@@ -740,7 +747,7 @@
                 </div>
 
                   <div class="col-xs-12 col-sm-6 col-lg-5">
-                  <form name="footer-form" class="clearfix contactForm modal__form" method="post" action="mail/mail.php">
+                  <form name="footer-form" class="modal__height clearfix contactForm modal__form" method="post" action="mail/mail.php">
                     <div class="col-xs-12">
                       <p class="modal__heading">Заполните форму что бы получить консультацию по ликвидации предприятий</p>
                     </div>
@@ -754,7 +761,8 @@
                         <input aria-invalid="false" class="form-control form__input modal__input form__mail" placeholder="Ваш E-mail" required="" data-validation-required-message="Please enter your phone number." name="email" type="email">
                       </div>
                       <div class="text-center col-xs-12 ">
-                        <button class="btn__call destroy__btn"><span>Получить консультацию</span></button> 
+                        <div id="success"></div>
+                        <button type="submit" class="btn__call destroy__btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...">Получить консультацию</button>
                       </div>
                     </form>
                   </div>
@@ -806,9 +814,10 @@
                         <input aria-invalid="false" class="form-control form__input modal__input form__mail" placeholder="Ваш E-mail" required="" data-validation-required-message="Please enter your phone number." name="email" type="email">
                       </div>
                       <div class="text-center col-xs-12 ">
-                        <button class="btn__call destroy__btn"><span>Получить консультацию</span></button> 
-                      </div>
-                    </form>
+                       <div id="success"></div>
+                       <button type="submit" class="btn__call destroy__btn" data-loading-text="<i class='fa fa-circle-o-notch fa-spin'></i> Файл отправляется...">Получить консультацию</button>
+                     </div>
+                   </form>
                   </div>
 
                 </div>

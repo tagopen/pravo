@@ -688,6 +688,7 @@ a:focus {
   margin-bottom: 25px;
 }
 .help__info {
+  color: #000;
   font: 400 18px/20px "PT Sans", sans-serif;
 }
 

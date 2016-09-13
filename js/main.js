@@ -53,6 +53,11 @@ $(window).on('resize', function(){
 }).trigger('resize');
 
 // EquialHeight binding to bootstrap modal 
+$('#register').on('shown.bs.modal', function () {
+ if( $( window ).width() >= 768 ) {
+  $('.modal__height').equialHeight();
+ }
+});
 $('#destroy').on('shown.bs.modal', function () {
  if( $( window ).width() >= 768 ) {
   $('.modal__height').equialHeight();
@@ -60,12 +65,12 @@ $('#destroy').on('shown.bs.modal', function () {
 });
 
 // Scroll to bottom block
-if( $( window ).width() >= 320 ) {
+$(document).ready( function() {
   $('.exp__btn').click(function(){
-    $("html, body").animate({ scrollTop: $(".case").offset().top }, 2500);
+    $("html, body").animate({ scrollTop: $(".case").offset().top }, 2000);
     return false;
   });
-}
+});
 
 // Employee spoiler 
 $(document).ready( function() {

@@ -1,6 +1,6 @@
 +comment('general style')
 +ic
-@each $ic in help1, help2, help3, help4, arrow, arrow320, offerarrow, offerarrow320
+@each $ic in help1, help2, help3, help4, help11, help22, help33, help44, arrow, arrow320, offerarrow, offerarrow320, close
   .ic-#{$ic}
     +sb(#{$ic})
 .form
@@ -45,6 +45,46 @@
   text-transform: uppercase
   margin: 0
   text-align: center  
+.modal
+  &__body
+    padding: 0 15px
+    position: relative
+  &__content
+    border: 0
+    +br(0)  
+  &__info
+    padding-top: 25px
+    &--text
+      color: #000
+      font: 400 14px/18px $os 
+      margin-bottom: 20px
+  &__form
+    padding: 30px 15px
+    background-color: $main_color_blue
+    margin: 0 -15px
+  &__heading  
+    color: #fff
+    font: 400 18px/20px $os
+    margin-bottom: 35px
+  &__input  
+    color: #fff 
+    background-color: transparent 
+    +placeholder
+      color: #fff
+    &:focus
+      border-color: $main_color_yellow
+  &__close      
+    position: absolute
+    right: 10px
+    top: 5px
+    color: #000
+    text-shadow: none
+    z-index: 10
+    opacity: 1   
+    &:hover,
+    &:focus
+      color: $main_color_yellow
+      opacity: 1
 +comment("home page style")
 html
   overflow-x: hidden
@@ -83,8 +123,10 @@ a:focus
     margin-right: 10px
   &__box
     display: inline-block
+    text-align: center
   &__link
     display: block 
+    color: #000
     font: 400 11px/11px $pts
     margin-bottom: 5px
 .content
@@ -99,12 +141,18 @@ a:focus
   &__list  
     padding-left: 0
     margin-bottom: 25px
+    &--text
+      float: left
+      width: 90%
+      margin: 0
+      color: #000
     &--item
       list-style-type: none
       font: 400 14px/20px $os   
       &:before 
         content: '\f0da'
         font-family: $fa
+        float: left
         margin-right: 10px
         color: $main_color_yellow
 +comment("help section style")
@@ -116,7 +164,7 @@ a:focus
     display: inline-block         
   &__title
     color: #000
-    font: 400 16px/20px $pts  
+    font: 600 16px/20px $pts  
     margin-bottom: 25px
   &__info
     font: 400 18px/20px $pts 
@@ -162,6 +210,7 @@ a:focus
     font: 400 16px/20px $os
     text-align: center
     margin: 0 0 70px
+    color: #000
   &__info
     display: inline-block  
     padding: 5px
@@ -256,18 +305,22 @@ a:focus
     margin: 0
     max-width: 140px
     text-align: center
+    color: #000
     &--small
       display: block
       font: 300 italic 12px/14px $os
     &1
       top: 0
-      left: 52% 
+      left: 50% 
+      margin-left: 15px
     &2
       top: 90px
-      left: 52%
+      left: 50%
+      margin-left: 15px
     &3
       top: 165px
-      left: 57%     
+      left: 50% 
+      margin-left: 30px    
     &4
       top: 260px
       left: 50%
@@ -290,19 +343,24 @@ a:focus
       margin-left: -80px
     &9
       top: 655px
-      left: 65%   
+      left: 50%  
+      margin-left: 55px 
     &10
       top: 740px
-      left: 58%  
+      left: 50% 
+      margin-left: 10px 
     &-1
       top: 0
-      right: 60%
+      left: 50%
+      margin-left: -155px
     &-2
       top: 90px
-      right: 60%
+      left: 50%
+      margin-left: -155px
     &-3
       top: 740px
-      right: 55%  
+      left: 50%
+      margin-left: -145px  
   &__sides  
     padding: 15px
     border: 2px dashed $main_color_blue
@@ -378,16 +436,72 @@ a:focus
     font: 600 16px/20px $os  
   &__btn
     color: #000
-    font: 300 italic 16px/20px $os   
+    font: 300 italic 16px/20px $os 
+    border: 0
+    background: none  
   &__info,
   &__descr
     color: #000
     font: 400 16px/20px $os   
     margin-bottom: 0
+  &__spoiler
+    visibility: hidden
+    opacity: 0
+    transition: all 1s ease
++comment("case section style") 
+.case
+  padding: 25px 0
+  background: url(../img/case.jpg) no-repeat center
+  +cover
+  &__box
+    padding: 30px 15px 250px
+    background-color: rgba(255,255,255,0.7)
+  &__title
+    color: #000  
+    margin-bottom: 40px 
+  &__img
+    margin-bottom: 30px  
+  &__point
+    color: #000
+    font: 400 16px/20px $os   
+    margin-bottom: 45px
+  .slick
+    &-prev
+      left: -50px
+    &-next
+      right: -50px  
+    &-prev,
+    &-next   
+      height: auto
+      width: auto
+      &:before
+        content: ''
+      .fa
+        font-size: 100px
+        color: $main_color_blue   
 +comment("sertificate section style")   
 .sertificates
-  background: url(../img/ser.jpg) no-repeat center   
-  +cover
+  padding: 50px 0 150px
+  background: url(../img/ser.jpg) no-repeat center / 100% 100%
+  &__title
+    color: #000
+    margin-bottom: 60px
+.s-slider
+  padding: 20px
+  &__item
+    text-align: center
+    img
+      display: inline-block 
+  .slick
+    &-prev,
+    &-next   
+      height: auto
+      width: auto
+      &:before
+        content: ''
+      .fa
+        font-size: 100px
+        color: $main_color_blue 
 +comment("subscribe section style")    
 .subscribe
   background: url(../img/sb.jpg) no-repeat center 
@@ -399,8 +513,13 @@ a:focus
     padding: 5px
     color: #fff
     background-color: $main_color_blue 
-+comment("subscribe section style") 
+  &__subtitle  
+    color: #fff
+    font: 400 18px/20px $os
++comment("contact section style") 
 .contact
+  &__info
+    padding-top: 40px
   &__title
     margin-bottom: 40px
   &__descr
@@ -442,16 +561,42 @@ a:focus
         color: #fff 
     &--bg
       background-color: transparent 
+  &__map
+    border-top: 5px solid $main_color_yellow  
+    border-bottom: 5px solid $main_color_yellow  
 .form__message
   resize: none    
 .mobile
-  margin-bottom: 40px
+  margin-bottom: 30px
   &__container
     text-align: center
     .fa
-      float: left
+      margin-right: 10px
       color: $main_color_yellow
       font-size: 18px
+    &1
+      margin-bottom: 10px  
   &__number
     color: $main_color_blue 
-    font: 400 16px/20px $os  
+    font: 400 16px/20px $os 
++comment("thanks page style")
+.thanks
+  &__box
+    padding: 100px 0 200px   
+  &__heading
+    display: block
+    color: #000
+    padding: 15px 20px
+    font: 400 20px/24px $os
+    background-color: $main_color_yellow 
+    text-transform: uppercase
+    margin: 0
+  &__subheading
+    display: block
+    color: #000
+    padding: 10px 20px
+    font: 400 18px/24px $os
+    background-color: $main_color_blue
+    margin: 0 
+  &__btn
+    display: inline-block

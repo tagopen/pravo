@@ -8,7 +8,32 @@
     font: 400 30px/36px $os
   .form
     &__input
-      font: 400 18px/20px $os  
+      font: 400 18px/20px $os 
+  .modal
+    &__content
+      background: url(../img/modalbg.jpg) no-repeat center / 100% 100%
+    &__size
+      width: 750px
+      margin: 70px auto 0
+    &__small
+      width: 500px
+      margin: 70px auto 0  
+    &__close  
+      top: -75px 
+      transform: scale(0.8) 
+    &__body
+      padding: 0 30px 
+    &__info
+      padding: 40px 0 0 20px 
+      &--text
+        font: 400 16px/20px $os 
+        margin-bottom: 25px
+    &__form
+      padding: 40px 15px
+      margin: 0
+    &__heading  
+      font: 400 20px/24px $os
+      margin-bottom: 35px  
   +comment("header style") 
   .navbar
     &__call
@@ -18,7 +43,6 @@
       background-image: linear-gradient(to top, #ffbb00 0%, #ffe900 100%) 
       +br(3px)    
   .phone
-    padding-right: 20px
     .fa
       font-size: 50px
     &__link
@@ -126,19 +150,19 @@
         left: 195px     
       &4
         top: -50px
-        left: 220px  
+        left: 150px  
       &5
         top: 30px
-        left: 370px   
+        left: 290px   
       &6
         top: -50px
-        left: 455px
+        left: 375px
       &7
         top: 30px
-        left: 525px
+        left: 445px
       &8
         top: -60px
-        left: 600px
+        left: 530px
       &9
         top: 70px
         left: 525px   
@@ -154,6 +178,8 @@
       &-3
         top: 105px
         left: 660px 
+    &__text
+      margin: 0    
   .side
     &__box
       display: inline-block
@@ -176,13 +202,33 @@
       &--name
         font-weight: 600 
     &__subtitle
-      font: 400 24px/28px $os  
+      font: 400 24px/28px $os 
+  +comment("case section style") 
+  .case
+    padding: 40px 0
+    &__box
+      padding: 30px 50px 0 
+    &__img
+      float: left 
+      margin: 0 30px 0 0
+      max-width: 300px
+    &__name
+      color: #000
+      font: 600 20px/24px $os 
+    &__rubric
+      font: 600 20px/24px $os
+      margin-right: 10px  
+    &__point
+      font: 400 20px/24px $os   
+  +comment("sertificate section style")   
+  .s-slider__item
+    padding: 0 50px   
   +comment("contact section style") 
   .contact
     &__descr
-    .fa
-      color: $main_color_yellow
-      font-size: 24px 
+      .fa
+        color: $main_color_yellow
+        font-size: 24px 
     &__address,
     &__call
       &--info
@@ -197,8 +243,23 @@
       .fa
         font-size: 24px
     &__number
-      font: 400 20px/24px $os                  
-+r(992)    
+      font: 400 20px/24px $os   
+  +comment("thanks page style")
+  .thanks
+    &__box
+      padding: 200px 0
+      background: url(../img/thanks.jpg) no-repeat center    
+    &__heading,
+    &__subheading
+      display: inline-block
+    &__heading
+      font: 400 30px/36px $os  
+    &__subheading
+      font: 400 20px/30px $os                     
++r(992)  
+  +comment('general style')  
+  .modal__close
+    right: -100px
   +comment("header style") 
   .content
     &__box
@@ -227,19 +288,19 @@
         left: 265px     
       &4
         top: -45px
-        left: 300px  
+        left: 230px  
       &5
         top: 35px
-        left: 470px   
+        left: 400px   
       &6
         top: -55px
-        left: 580px
+        left: 505px
       &7
         top: 30px
-        left: 675px
+        left: 600px
       &8
         top: -60px
-        left: 780px
+        left: 710px
       &9
         top: 80px
         left: 700px   
@@ -254,11 +315,22 @@
         left: 115px
       &-3
         top: 135px
-        left: 875px                 
+        left: 875px   
+  +comment("case section style") 
+  .case
+    &__img
+      max-width: 400px                    
   +comment("subscribe section style")    
   .subscribe
     padding: 75px 0 40px  
 +r(1200) 
+  +comment('general style')
+  .modal
+    &__size
+      width: 900px
+    &__close  
+      top: -75px 
+      transform: scale(0.8) 
   +comment("company section style")
   .company
     &__img
@@ -281,19 +353,19 @@
         left: 330px     
       &4
         top: -40px
-        left: 350px  
+        left: 300px  
       &5
         top: 50px
-        left: 565px   
+        left: 490px   
       &6
         top: -90px
-        left: 685px
+        left: 615px
       &7
         top: 50px
-        left: 805px
+        left: 735px
       &8
         top: -50px
-        left: 930px
+        left: 860px
       &9
         top: 100px
         left: 870px   

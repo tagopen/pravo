@@ -40,16 +40,40 @@ $.fn.equialHeight = function() {
 } 
 
 if( $( window ).width() >= 768 ) {
-  $('.help__img .ic').equialHeight();
+  $('.help__img').equialHeight();
   $('.help__box--a .help__title').equialHeight();
   $('.help__box--a .help__info').equialHeight();
   $('.help__box--b .help__title').equialHeight();
   $('.help__box--b .help__info').equialHeight();
   $('.employee__container').equialHeight();
   $('.employee__name').equialHeight();
+  $('.hich').equialHeight();
 }
 
+if( $( window ).width() >= 320 ) {
+  $('.exp__btn').click(function(){
+    $("html, body").animate({ scrollTop: $(".case").offset().top }, 2500);
+    return false;
+  });
+}
 
+$(document).ready( function() {
+  var $elemHeight = $('.help__img').height();
+  $('.help__img').css('line-height',  $elemHeight + 'px');
+});
+
+$('.girl1__btn').click(function () {
+  $('.girl1__btn').css('visibility',  'hidden');
+  $('.girl1').css({'visibility' : 'visible', 'opacity':'1'});
+ });
+$('.girl2__btn').click(function () {
+  $('.girl2__btn').css('visibility',  'hidden');
+  $('.girl2').css({'visibility' : 'visible', 'opacity':'1'});
+ });
+$('.girl3__btn').click(function () {
+  $('.girl3__btn').css('visibility',  'hidden');
+  $('.girl3').css({'visibility' : 'visible', 'opacity':'1'});
+ });
 // jQuery for page scrolling feature - requires jQuery Easing plugin
 /*$(function() {
     $('a.page-scroll').bind('click', function(event) {
@@ -114,11 +138,42 @@ $('.dropdown, .dropup').each(function() {
     $('.navbar-toggle:visible').click();
 });*/
 
+$('.sertificates__slider').slick({
+  slidesToShow: 2,
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+  centerMode: false,
+  focusOnSelect: true,
+  prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous<i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+  nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next<i class="fa fa-angle-right" aria-hidden="true"></i></button>',
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
 
-/*$('.slider').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
+$('.case__slider').slick({
   slidesToShow: 1,
-  adaptiveHeight: true
-});*/
+  slidesToScroll: 1,
+  arrows: true,
+  dots: false,
+  centerMode: false,
+  focusOnSelect: true,
+  prevArrow: '<button type="button" data-role="none" class="slick-prev" aria-label="Previous" tabindex="0" role="button">Previous<i class="fa fa-angle-left" aria-hidden="true"></i></button>',
+  nextArrow: '<button type="button" data-role="none" class="slick-next" aria-label="Next" tabindex="0" role="button">Next<i class="fa fa-angle-right" aria-hidden="true"></i></button>'
+});
+

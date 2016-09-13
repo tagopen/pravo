@@ -51,7 +51,7 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet"> 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 
     <!-- Font-Awesome CSS -->
     <link rel="stylesheet" href="css/font-awesome.css">
@@ -201,17 +201,19 @@
             <h3 class="destroy__subheading">Ликвидировать предприятие за 2 дня и сэкономить 90% средств это реально</h3>
           </div>
           <div class="text-center col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-           <p class="destroy__info">Запишитесь на бесплатную консультацию и узнайте подробности</p>
+           <p class="destroy__info">Запишитесь на бесплатную  консультацию и узнайте подробности</p>
          </div>
          <div class="col-xs-12">
-           <form name="form1" class="contactForm" method="post" action="mail/mail.php">
+           <form name="form1" class="contactForm" method="post" action="mail/mail.php" novalidate>
 
             <div class="form-group col-xs-12 col-sm-3 col-md-4">
-              <input class="form-control form__input form__input--bg form__name" placeholder="Ваше имя" required data-validation-required-message="Please enter your name." name="name" type="text">
+              <input class="form-control form__input form__input--bg form__name" placeholder="Ваше имя" required data-validation-required-message="Это поле, не может быть пустым" name="name" type="text">
+              <p class="help-block text-danger"></p>
             </div>
 
             <div class="form-group col-xs-12 col-sm-4">
-              <input class="form-control form__input form__input--bg form__phone" placeholder="Ваш телефон" required data-validation-required-message="Please enter your phone number." name="phone" type="tel">
+              <input class="form-control form__input form__input--bg form__phone" placeholder="Ваш телефон" required data-validation-required-message="Это поле, не может быть пустым" name="phone" type="tel">
+              <p class="help-block text-danger"></p>
             </div>
 
             <div class="text-center col-xs-12 col-sm-5 col-md-4 ">
@@ -285,9 +287,10 @@
           <p class="rule__info">Запишитесь на бесплатную консультацию и узнайте подробности</p>
         </div>
         <div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-         <form name="form2" class="contactForm" method="post" action="mail/mail.php">
+         <form name="form2" class="contactForm" method="post" action="mail/mail.php" novalidate>
           <div class="form-group col-xs-12">
-            <input aria-invalid="false" class="form-control form__input form__input--bg form__input--color form__phone" placeholder="Ваш номер телефона" required data-validation-required-message="Please enter your phone number." name="phone" type="tel">
+            <input aria-invalid="false" class="form-control form__input form__input--bg form__input--color form__phone" placeholder="Ваш номер телефона" required data-validation-required-message="Это поле, не может быть пустым" name="phone" type="tel" />
+            <p class="help-block text-danger"></p>
           </div>
           <div class="text-center col-xs-12">
             <div id="success"></div>
@@ -523,14 +526,16 @@
       <h2 class="g-title subscribe__title">Подпишитесь на рассылку и мгновенно получите на почту "статья"</h2>
       </div>
       <div class="col-xs-12">
-       <form name="form1" class="contactForm" method="post" action="mail/mail.php">
+       <form name="form1" class="contactForm" method="post" action="mail/mail.php" novalidate>
 
         <div class="form-group col-xs-12 col-sm-3 col-md-4">
-          <input class="form-control form__input form__input--color form__input--bg form__name" placeholder="Ваше имя" required data-validation-required-message="Please enter your name." name="name" type="text">
+          <input class="form-control form__input form__input--color form__input--bg form__name" placeholder="Ваше имя" required data-validation-required-message="Это поле, не может быть пустым" name="name" type="text">
+          <p class="help-block text-danger"></p>
         </div>
 
         <div class="form-group col-xs-12 col-sm-4">
-          <input class="form-control form__input form__input--color form__input--bg form__mail" placeholder="Ваш E-mail" required data-validation-required-message="Please enter your phone number." name="email" type="email">
+          <input class="form-control form__input form__input--color form__input--bg form__mail" placeholder="Ваш E-mail" required data-validation-required-message="Это поле, не может быть пустым" name="email" type="email">
+          <p class="help-block text-danger"></p>
         </div>
 
         <div class="text-center col-xs-12 col-sm-5 col-md-4 ">
@@ -583,15 +588,18 @@
               свяжитесь с нами или оставьте 
               свои контакты для звонка
             </h2>
-            <form name="footer-form" class="contactForm" method="post" action="mail/mail.php">
+            <form name="footer-form" class="contactForm" method="post" action="mail/mail.php" novalidate>
               <div class="form-group col-xs-12 col-sm-6">
-                <input class="form-control contact__input form__name" placeholder="Ваше имя" required data-validation-required-message="Please enter your name." name="name" type="text">
+                <input class="form-control contact__input form__name" placeholder="Ваше имя" required data-validation-required-message="Это поле, не может быть пустым" name="name" type="text">
+                <p class="help-block text-danger"></p>
               </div>
               <div class="form-group col-xs-12 col-sm-6">
-                <input class="form-control contact__input form__phone" placeholder="Ваш телефон" required data-validation-required-message="Please enter your phone number." name="phone" type="tel">
+                <input class="form-control contact__input form__phone" placeholder="Ваш телефон" required data-validation-required-message="Это поле, не может быть пустым" name="phone" type="tel">
+                <p class="help-block text-danger"></p>
               </div>
               <div class="form-group form__group col-sm-12">
-                <textarea rows="4" class="form-control contact__input form__message" placeholder="Ваше сообщение" required data-validation-required-message="Please enter your message." name="message"></textarea>
+                <textarea rows="4" class="form-control contact__input form__message" placeholder="Ваше сообщение" required data-validation-required-message="Это поле, не может быть пустым" name="message"></textarea>
+                <p class="help-block text-danger"></p>
               </div>
               <div class="text-center col-xs-12 ">
                 <div id="success"></div>
@@ -622,15 +630,17 @@
               <div class="row">
 
                   <div class="col-xs-12">
-                  <form name="footer-form" class="clearfix contactForm modal__form" method="post" action="mail/mail.php">
+                  <form name="footer-form" class="clearfix contactForm modal__form" method="post" action="mail/mail.php" novalidate>
                     <div class="col-xs-12">
                       <p class="modal__heading">Оставьте свои контактные данные и мы с Вами свяжемся</p>
                     </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__name" placeholder="Ваше имя" required data-validation-required-message="Please enter your name." name="name" type="text">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__name" placeholder="Ваше имя" required data-validation-required-message="Это поле, не может быть пустым" name="name" type="text">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__phone" placeholder="Ваш телефон" required data-validation-required-message="Please enter your phone number." name="phone" type="tel">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__phone" placeholder="Ваш телефон" required data-validation-required-message="Это поле, не может быть пустым" name="phone" type="tel">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="text-center col-xs-12 ">
                         <div id="success"></div>
@@ -658,18 +668,21 @@
               <div class="row">
 
                   <div class="col-xs-12">
-                  <form name="footer-form" class="clearfix contactForm modal__form" method="post" action="mail/mail.php">
+                  <form name="footer-form" class="clearfix contactForm modal__form" method="post" action="mail/mail.php" novalidate>
                     <div class="col-xs-12">
                       <p class="modal__heading">Оставьте свои контактные данные для получения консультации</p>
                     </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__name" placeholder="Ваше имя" required data-validation-required-message="Please enter your name." name="name" type="text">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__name" placeholder="Ваше имя" required data-validation-required-message="Это поле, не может быть пустым" name="name" type="text">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__phone" placeholder="Ваш телефон" required data-validation-required-message="Please enter your phone number." name="phone" type="tel">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__phone" placeholder="Ваш телефон" required data-validation-required-message="Это поле, не может быть пустым" name="phone" type="tel">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__mail" placeholder="Ваш E-mail" required data-validation-required-message="Please enter your phone number." name="email" type="email">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__mail" placeholder="Ваш E-mail" required data-validation-required-message="Это поле, не может быть пустым" name="email" type="email">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="text-center col-xs-12 ">
                         <div id="success"></div>
@@ -697,18 +710,21 @@
               <div class="row">
 
                   <div class="col-xs-12">
-                  <form name="footer-form" class="clearfix contactForm modal__form" method="post" action="mail/mail.php">
+                  <form name="footer-form" class="clearfix contactForm modal__form" method="post" action="mail/mail.php" novalidate>
                     <div class="col-xs-12">
                       <p class="modal__heading">Оставьте свои контактные данные для получения консультации</p>
                     </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__name" placeholder="Ваше имя" required data-validation-required-message="Please enter your name." name="name" type="text">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__name" placeholder="Ваше имя" required data-validation-required-message="Это поле, не может быть пустым" name="name" type="text">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__phone" placeholder="Ваш телефон" required data-validation-required-message="Please enter your phone number." name="phone" type="tel">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__phone" placeholder="Ваш телефон" required data-validation-required-message="Это поле, не может быть пустым" name="phone" type="tel">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__mail" placeholder="Ваш E-mail" required data-validation-required-message="Please enter your phone number." name="email" type="email">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__mail" placeholder="Ваш E-mail" required data-validation-required-message="Это поле, не может быть пустым" name="email" type="email">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="text-center col-xs-12 ">
                         <div id="success"></div>
@@ -747,18 +763,21 @@
                 </div>
 
                   <div class="col-xs-12 col-sm-6 col-lg-5">
-                  <form name="footer-form" class="modal__height clearfix contactForm modal__form" method="post" action="mail/mail.php">
+                  <form name="footer-form" class="modal__height clearfix contactForm modal__form" method="post" action="mail/mail.php" novalidate>
                     <div class="col-xs-12">
                       <p class="modal__heading">Заполните форму что бы получить консультацию по ликвидации предприятий</p>
                     </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__name" placeholder="Ваше имя" required data-validation-required-message="Please enter your name." name="name" type="text">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__name" placeholder="Ваше имя" required data-validation-required-message="Это поле, не может быть пустым" name="name" type="text">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__phone" placeholder="Ваш номер телефона" required data-validation-required-message="Please enter your phone number." name="phone" type="tel">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__phone" placeholder="Ваш номер телефона" required data-validation-required-message="Это поле, не может быть пустым" name="phone" type="tel">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__mail" placeholder="Ваш E-mail" required data-validation-required-message="Please enter your phone number." name="email" type="email">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__mail" placeholder="Ваш E-mail" required data-validation-required-message="Это поле, не может быть пустым" name="email" type="email">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="text-center col-xs-12 ">
                         <div id="success"></div>
@@ -800,19 +819,21 @@
                   </div>
 
                   <div class="col-xs-12 col-sm-6 col-lg-5">
-                  <form name="footer-form" class="modal__height clearfix contactForm modal__form" method="post" action="mail/mail.php">
+                  <form name="footer-form" class="modal__height clearfix contactForm modal__form" method="post" action="mail/mail.php" novalidate>
                     <div class="col-xs-12">
                       <p class="modal__heading">Заполните форму что бы получить консультацию по ликвидации предприятий</p>
                     </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__name" placeholder="Ваше имя" required data-validation-required-message="Please enter your name." name="name" type="text">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__name" placeholder="Ваше имя" required data-validation-required-message="Это поле, не может быть пустым" name="name" type="text">
                         <p class="help-block text-danger"></p>
                       </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__phone" placeholder="Ваш номер телефона" required data-validation-required-message="Please enter your phone number." name="phone" type="tel">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__phone" placeholder="Ваш номер телефона" required data-validation-required-message="Это поле, не может быть пустым" name="phone" type="tel">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="form-group col-xs-12">
-                        <input aria-invalid="false" class="form-control form__input modal__input form__mail" placeholder="Ваш E-mail" required data-validation-required-message="Please enter your phone number." name="email" type="email">
+                        <input aria-invalid="false" class="form-control form__input modal__input form__mail" placeholder="Ваш E-mail" required data-validation-required-message="Это поле, не может быть пустым" name="email" type="email">
+                        <p class="help-block text-danger"></p>
                       </div>
                       <div class="text-center col-xs-12 ">
                        <div id="success"></div>
